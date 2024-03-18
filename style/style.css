@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box; /* Added this line */
+}
+
+body {
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/kali-small-logo2.png);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 100px;
+    padding: 50px;
+    width: 100%; /* Changed this line */
+    height: 100%;
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+}
+
+/* Added this media query */
+@media screen and (max-width: 768px) {
+    .box {
+        margin: 50px;
+        padding: 30px;
+    }
+}
+
+.box__into {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.box__h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#box__input {
+    width: 100%; /* Changed this line */
+    height: 50px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    outline: none;
+    font-size: 18px;
+    padding: 0 35px 0 10px;
+    color: white;
+}
+
+#box__input::placeholder {
+    color: white;
+    font-weight: 700;
+}
+
+#box__button {
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: white;
+    cursor: pointer;
+}
+
+#box__button:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+#box__button:active {
+    position: relative;
+    transform: scale(0.96);
+}
+
+.list {
+    width: 100%; /* Added this line */
+}
+
+#list__ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.li {
+    width: 100%; /* Changed this line */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 12px 10px 10px;
+}
+
+.delButton {
+    background-color: inherit;
+    color: red;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+#delAll {
+    background-color: rgb(255, 254, 254);
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    color: red;
+}
+
+#delAll:hover {
+    background-color: rgb(225, 225, 225);
+}
+
+#delAll:active {
+    position: relative;
+    transform: scale(0.96);
+}
